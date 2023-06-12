@@ -5,7 +5,6 @@ import NavBar from './NavBar'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <NavBar />
       <div>Home</div>
     </main>
   )
