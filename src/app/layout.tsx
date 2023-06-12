@@ -1,3 +1,6 @@
+'use client'
+
+import NavBar from './NavBar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -15,7 +18,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavBar />
+
+        {children}
+      </body>
+      <style jsx global>
+        {`
+          span {
+            color: white;
+          }
+        `}
+      </style>
     </html>
   )
 }
